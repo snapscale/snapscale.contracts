@@ -3,6 +3,7 @@ set -eo pipefail
 
 function usage() {
    printf "Usage: $0 OPTION...
+  -i DIR      Directory where contracts is installed. (Default: $HOME/contracts/X.Y)
   -e DIR      Directory where EOSIO is installed. (Default: $HOME/eosio/X.Y)
   -c DIR      Directory where EOSIO.CDT is installed. (Default: /usr/local/eosio.cdt)
   -t          Build unit tests.
@@ -13,10 +14,14 @@ function usage() {
 }
 
 BUILD_TESTS=false
+INSTALL_DIR_PROMPT=/usr/local/eosio.contracts
 
 if [ $# -ne 0 ]; then
-  while getopts "e:c:tyh" opt; do
+  while getopts "i:e:c:tyh" opt; do
     case "${opt}" in
+      i )
+        INSTALL_DIR_PROMPT=$OPTARG
+      ;;
       e )
         EOSIO_DIR_PROMPT=$OPTARG
       ;;
@@ -79,6 +84,7 @@ NC='\033[0m'
 CPU_CORES=$(getconf _NPROCESSORS_ONLN)
 mkdir -p build
 pushd build &> /dev/null
-cmake -DBUILD_TESTS=${BUILD_TESTS} ../
+cmake -DBUILD_TESTS=${BUILD_TESTS} -DCMAKE_INSTALL_PREFIX:PATH=${INSTALL_DIR_PROMPT} ../
 make -j $CPU_CORES
+# make install
 popd &> /dev/null
