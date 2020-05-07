@@ -1,10 +1,11 @@
-# snapscale.contracts
+# Snapscale Contracts
 
 ## Version : 1.9.1
 
-The design of the SnapScale blockchain calls for a number of smart contracts that are run at a privileged permission level in order to support functions such as block producer registration and voting, token staking for CPU and network bandwidth, RAM purchasing, multi-sig, etc.  These smart contracts are referred to as the bios, system, msig, wrap (formerly known as sudo) and token contracts.
+The design of the SnapScale blockchain calls for a number of smart contracts that are run at a privileged permission level in order to support functions such as block producer registration. These smart contracts are referred to as the bios, system, msig, wrap (formerly known as sudo) and token contracts.
 
-This repository contains examples of these privileged contracts that are useful when deploying, managing, and/or using an SnapScale blockchain.  They are provided for reference purposes:
+This repository contains examples of these privileged contracts that are useful when deploying, managing, and/or using the SnapScale blockchain. They are provided for reference purposes:
+
 
    * [eosio.bios](./contracts/eosio.bios)
    * [eosio.system](./contracts/eosio.system)
@@ -25,7 +26,7 @@ To build the contracts follow the instructions in [`Build and deploy` section](.
 
 [MIT](./LICENSE)
 
-The included icons are provided under the same terms as the software and accompanying documentation, the MIT License.  We welcome contributions from the artistically-inclined members of the community, and if you do send us alternative icons, then you are providing them under those same terms.
+SnapScale is released under the Apache 2.0 license and is offered “AS IS” without warranty of any kind, express or implied. Any security provided by the SnapScale software depends in part on how it is used, configured, and deployed. SnapScale is built upon many third-party libraries such as WABT (Apache License) and WAVM (BSD 3-clause) which are also provided “AS IS” without warranty of any kind.
 
 ## Important
 
