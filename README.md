@@ -11,13 +11,14 @@ The design of the SnapScale blockchain calls for a number of smart contracts tha
 This repository contains examples of these privileged contracts that are useful when deploying, managing, and/or using the SnapScale blockchain. They are provided for reference purposes:
 
 
-   * [eosio.bios](./contracts/eosio.bios)
-   * [eosio.system](./contracts/eosio.system)
-   * [eosio.msig](./contracts/eosio.msig)
-   * [eosio.wrap](./contracts/eosio.wrap)
+   * [boot](https://github.com/snapscale/contracts/tree/master/eosio.boot)
+   * [bios](https://github.com/snapscale/contracts/tree/master/eosio.bios)
+   * [system](https://github.com/snapscale/contracts/tree/master/eosio.system)
+   * [msig](https://github.com/snapscale/contracts/tree/master/eosio.msig)
+   * [wrap](https://github.com/snapscale/contracts/tree/master/eosio.wrap)
 
 The following unprivileged contract(s) are also part of the system.
-   * [eosio.token](./contracts/eosio.token)
+   * [token](https://github.com/snapscale/contracts/tree/master/eosio.token)
 
 Dependencies:
 * [snapscale.cdt](https://github.com/SnapScale/snapscale.cdt)
@@ -51,15 +52,15 @@ SnapScale 的设计需要支持很多特权合约的部署，比如支持区块�
 
 该存储库包含这些特权合约的示例，这些示例在部署，管理和/或使用SnapScale 区块链时非常有用，以下仅供参考：
 
-   * [boot](./contracts/eosio.boot)
-   * [bios](./contracts/eosio.bios)
-   * [system](./contracts/eosio.system)
-   * [msig](./contracts/eosio.msig)
-   * [wrap](./contracts/eosio.wrap)
+   * [boot](https://github.com/snapscale/contracts/tree/master/eosio.boot)
+   * [bios](https://github.com/snapscale/contracts/tree/master/eosio.bios)
+   * [system](https://github.com/snapscale/contracts/tree/master/eosio.system)
+   * [msig](https://github.com/snapscale/contracts/tree/master/eosio.msig)
+   * [wrap](https://github.com/snapscale/contracts/tree/master/eosio.wrap)
 
 
 以下非特权合约也是系统的一部分
-   * [eosio.token](./contracts/eosio.token)
+  * [token](https://github.com/snapscale/contracts/tree/master/eosio.token)
 
 依存关系：
 * [snapscale.cdt](https://github.com/SnapScale/snapscale.cdt)
