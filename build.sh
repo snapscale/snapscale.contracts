@@ -84,7 +84,6 @@ NC='\033[0m'
 CPU_CORES=$(getconf _NPROCESSORS_ONLN)
 mkdir -p build
 pushd build &> /dev/null
-cmake -DBUILD_TESTS=${BUILD_TESTS} -DCMAKE_INSTALL_PREFIX:PATH=${INSTALL_DIR_PROMPT} ../
+cmake -DBUILD_TESTS=${BUILD_TESTS} ../
 make -j $CPU_CORES
-# make install
 popd &> /dev/null
